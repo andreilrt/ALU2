@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 21 17:33:04 2021
+# Process ID: 6400
+# Current directory: D:/ALU2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7828 D:\ALU2\ALU2.xpr
+# Log file: D:/ALU2/vivado.log
+# Journal file: D:/ALU2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ALU2/ALU2.xpr
+INFO: [Project 1-313] Project file moved from 'E:/ALU2' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/clk.vhd', nor could it be found using path 'E:/ALU1/ALU/ALU.srcs/sources_1/new/clk.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/deco.vhd', nor could it be found using path 'E:/ALU1/ALU/ALU.srcs/sources_1/new/deco.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/mux.vhd', nor could it be found using path 'E:/ALU1/ALU/ALU.srcs/sources_1/new/mux.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/segmento.vhd', nor could it be found using path 'E:/ALU1/ALU/ALU.srcs/sources_1/new/segmento.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/ref.vhd', nor could it be found using path 'E:/ALU1/ALU/ALU.srcs/sources_1/new/ref.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/Bin8BCD.vhd', nor could it be found using path 'E:/ALU1/ALU/ALU.srcs/sources_1/new/Bin8BCD.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'ALU2.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 730.426 ; gain = 161.176
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/lsras/Downloads/ALU/ALU/ALU.srcs/sources_1/new/segmento.vhd C:/Users/lsras/Downloads/ALU/ALU/ALU.srcs/sources_1/new/Bin8BCD.vhd C:/Users/lsras/Downloads/ALU/ALU/ALU.srcs/sources_1/new/clk.vhd C:/Users/lsras/Downloads/ALU/ALU/ALU.srcs/sources_1/new/deco.vhd C:/Users/lsras/Downloads/ALU/ALU/ALU.srcs/sources_1/new/mux.vhd C:/Users/lsras/Downloads/ALU/ALU/ALU.srcs/sources_1/new/ref.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Sep 21 17:43:36 2021] Launched synth_1...
+Run output will be captured here: D:/ALU2/ALU2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Sep 21 17:48:48 2021] Launched impl_1...
+Run output will be captured here: D:/ALU2/ALU2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Sep 21 18:04:31 2021] Launched impl_1...
+Run output will be captured here: D:/ALU2/ALU2.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 21 20:20:30 2021...

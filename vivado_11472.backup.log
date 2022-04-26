@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Sep 22 20:49:48 2021
+# Process ID: 11472
+# Current directory: D:/ALU2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11380 D:\ALU2\ALU2.xpr
+# Log file: D:/ALU2/vivado.log
+# Journal file: D:/ALU2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ALU2/ALU2.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/clk.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/deco.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/mux.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/segmento.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/ref.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/ALU1/ALU/ALU.srcs/sources_1/new/Bin8BCD.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 716.992 ; gain = 150.355
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/ALU1/ALU/ALU.srcs/sources_1/new/Bin8BCD.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/ALU1/ALU/ALU.srcs/sources_1/new/clk.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/ALU1/ALU/ALU.srcs/sources_1/new/deco.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/ALU1/ALU/ALU.srcs/sources_1/new/mux.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/ALU1/ALU/ALU.srcs/sources_1/new/ref.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/ALU1/ALU/ALU.srcs/sources_1/new/segmento.vhd] -no_script -reset -force -quiet
+remove_files  {D:/ALU1/ALU/ALU.srcs/sources_1/new/Bin8BCD.vhd D:/ALU1/ALU/ALU.srcs/sources_1/new/clk.vhd D:/ALU1/ALU/ALU.srcs/sources_1/new/deco.vhd D:/ALU1/ALU/ALU.srcs/sources_1/new/mux.vhd D:/ALU1/ALU/ALU.srcs/sources_1/new/ref.vhd D:/ALU1/ALU/ALU.srcs/sources_1/new/segmento.vhd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 22 20:53:48 2021...

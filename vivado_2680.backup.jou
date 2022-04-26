@@ -1,0 +1,167 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Sep 22 12:19:54 2021
+# Process ID: 2680
+# Current directory: E:/ALU2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1772 E:\ALU2\ALU2.xpr
+# Log file: E:/ALU2/vivado.log
+# Journal file: E:/ALU2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ALU2/ALU2.xpr
+update_compile_order -fileset sources_1
+save_project_as project_1 E:/project_1 -force
+add_files -norecurse E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/mux.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/deco.vhd E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/segmento.vhd E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/conta.vhd E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/ref.vhd}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+add_files -norecurse E:/ALU2/ALU2.srcs/sources_1/new/Bin8BCD.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/mux.vhd] -no_script -reset -force -quiet
+remove_files  E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/mux.vhd
+export_ip_user_files -of_objects  [get_files E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/conta.vhd] -no_script -reset -force -quiet
+remove_files  E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/conta.vhd
+export_ip_user_files -of_objects  [get_files E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/segmento.vhd] -no_script -reset -force -quiet
+remove_files  E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/segmento.vhd
+export_ip_user_files -of_objects  [get_files E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/deco.vhd] -no_script -reset -force -quiet
+remove_files  E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/deco.vhd
+add_files -norecurse {E:/ALU2/ALU2.srcs/sources_1/new/ref.vhd E:/ALU2/ALU2.srcs/sources_1/new/segmento.vhd E:/ALU2/ALU2.srcs/sources_1/new/clk.vhd E:/ALU2/ALU2.srcs/sources_1/new/mux.vhd E:/ALU2/ALU2.srcs/sources_1/new/deco.vhd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/ALU2/ALU2.srcs/sources_1/new/ref.vhd] -no_script -reset -force -quiet
+remove_files  E:/ALU2/ALU2.srcs/sources_1/new/ref.vhd
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/ref.vhd] -no_script -reset -force -quiet
+remove_files  E:/VIVADO/Sum_BCD_Bin/Sum_BCD_Bin/Sum_BCD_Bin.srcs/sources_1/new/ref.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse E:/ALU2/ALU2.srcs/sources_1/new/ref.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports {Sel[0]} J2
+place_ports {Sel[1]} L2
+place_ports {Sel[2]} J1
+place_ports Control G2
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+startgroup
+set_property package_pin "" [get_ports [list  {Sel[2]}]]
+place_ports {Sel[0]} J1
+endgroup
+place_ports {Sel[2]} J2
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+startgroup
+set_property package_pin "" [get_ports [list  {Sel[2]}]]
+place_ports {Sel[0]} J2
+endgroup
+place_ports {Sel[2]} J1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+close_design
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/project_1/project_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run synth_1 -name synth_1
+startgroup
+set_property package_pin "" [get_ports [list  {Sel[2]}]]
+place_ports {Sel[0]} J1
+endgroup
+place_ports {Sel[2]} J2
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
